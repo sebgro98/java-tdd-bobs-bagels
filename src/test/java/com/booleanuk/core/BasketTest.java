@@ -36,7 +36,7 @@ Basket basket;
 
     @Test
     public void testIncrementBucketCapacity() {
-        Assertions.assertTrue(basket.incrementCapacity(2, "Dave"));
+        Assertions.assertFalse(basket.incrementCapacity(2, "Dave"));
     }
 
 }

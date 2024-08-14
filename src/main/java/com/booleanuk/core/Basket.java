@@ -33,9 +33,6 @@ public class Basket {
     }
 
     public boolean incrementCapacity(int amount, String name) {
-        if(name.equalsIgnoreCase("bob")) {
-            return false;
-        }
         maxCapacity = maxCapacity + amount;
         System.out.println("You have now updated the capacity");
         return true;
