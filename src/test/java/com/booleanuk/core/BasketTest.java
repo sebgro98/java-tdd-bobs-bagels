@@ -22,5 +22,9 @@ Basket basket;
         Assertions.assertFalse(basket.addBagel("Ham Bagel"));
 
     }
+    @Test
+    public void testRemoveBagel() {
+        Assertions.assertTrue(basket.removeBagel("Pepperoni Bagel"));
+    }
 
 }

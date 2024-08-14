@@ -19,4 +19,11 @@ public class Basket {
         return true;
     }
 
+    public boolean removeBagel(String name) {
+        if(name.isEmpty() || !(bagelsInBasket.contains(name))) {
+            return false;
+        }
+        return true;
+    }
+
 }
