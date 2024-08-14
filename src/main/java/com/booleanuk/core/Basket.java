@@ -8,6 +8,7 @@ public class Basket {
 
     public Basket() {
         bagelsInStore.add("Cheese Bagel");
+        bagelsInBasket.add("Pepperoni Bagel");
     }
 
     public boolean addBagel(String name) {
@@ -21,6 +22,7 @@ public class Basket {
 
     public boolean removeBagel(String name) {
         if(name.isEmpty() || !(bagelsInBasket.contains(name))) {
+            System.out.println("The item you're trying to remove doesn't exist.");
             return false;
         }
         return true;
