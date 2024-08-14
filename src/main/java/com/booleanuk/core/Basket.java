@@ -15,20 +15,21 @@ public class Basket {
 
     }
 
-    public boolean addBagel(String name) {
-        if(name.isEmpty() || !(bagelsInStore.contains(name)) || maxCapacity == bagelsInBasket.size() ) {
+    public boolean addBagel(String bagel) {
+        if(bagel.isEmpty() || !(bagelsInStore.contains(bagel)) || maxCapacity == bagelsInBasket.size() ) {
             return false;
         }
-        bagelsInBasket.add(name);
-        System.out.println("Your: " + name + " Has been added to the basket");
+        bagelsInBasket.add(bagel);
+        System.out.println("Your: " + bagel + " Has been added to the basket");
         return true;
     }
 
-    public boolean removeBagel(String name) {
-        if(name.isEmpty() || !(bagelsInBasket.contains(name))) {
+    public boolean removeBagel(String bagel) {
+        if(bagel.isEmpty() || !(bagelsInBasket.contains(bagel))) {
             System.out.println("The item you're trying to remove doesn't exist.");
             return false;
         }
+        System.out.println("The item " + bagel + " Got removed from your basket");
         return true;
     }
 
