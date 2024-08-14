@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Basket {
     ArrayList<String> bagelsInStore = new ArrayList<>();
     ArrayList<String> bagelsInBasket = new ArrayList<>();
+    int maxCapacity = 3;
 
     public Basket() {
         bagelsInStore.add("Cheese Bagel");
@@ -12,7 +13,7 @@ public class Basket {
     }
 
     public boolean addBagel(String name) {
-        if(name.isEmpty() || !(bagelsInStore.contains(name))) {
+        if(name.isEmpty() || !(bagelsInStore.contains(name)) || maxCapacity == bagelsInBasket.size() ) {
             return false;
         }
         bagelsInBasket.add(name);
