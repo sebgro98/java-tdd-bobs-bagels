@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Basket {
     ArrayList<String> bagelsInStore = new ArrayList<>();
     ArrayList<String> bagelsInBasket = new ArrayList<>();
-    int maxCapacity = 3;
+    int maxCapacity = 5;
 
     public Basket() {
         bagelsInStore.add("Cheese Bagel");

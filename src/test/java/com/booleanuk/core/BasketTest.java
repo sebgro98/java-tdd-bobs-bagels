@@ -30,8 +30,8 @@ Basket basket;
     }
 
     @Test
-    public void testBucketIsFull() {
-        Assertions.assertFalse(basket.addBagel("Cheese Bagel"));
+    public void testBucketIsNotFull() {
+        Assertions.assertTrue(basket.addBagel("Cheese Bagel"));
     }
 
     @Test
