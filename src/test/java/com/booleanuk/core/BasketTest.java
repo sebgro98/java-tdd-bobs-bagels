@@ -19,6 +19,7 @@ Basket basket;
     @Test
     public void testAddBagel() {
         Assertions.assertTrue(basket.addBagel("Cheese Bagel"));
+        Assertions.assertTrue(basket.addBagel("Cheese Bagel"));
         Assertions.assertFalse(basket.addBagel("Ham Bagel"));
         Assertions.assertTrue(basket.bagelsInBasket.contains("Cheese Bagel"));
         Assertions.assertFalse(basket.bagelsInBasket.contains("Ham Bagel"));
