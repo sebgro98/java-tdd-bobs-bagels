@@ -10,6 +10,9 @@ public class Basket {
     public Basket() {
         bagelsInStore.add("Cheese Bagel");
         bagelsInBasket.add("Pepperoni Bagel");
+        bagelsInBasket.add("Cheese Bagel");
+        bagelsInBasket.add("Ham Bagel");
+
     }
 
     public boolean addBagel(String name) {
