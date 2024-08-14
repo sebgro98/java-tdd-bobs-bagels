@@ -16,4 +16,9 @@ Basket basket;
 
     }
 
+    @Test
+    public void testAddBagel() {
+        Assertions.assertTrue(basket.addBagel("Cheese Bagel"));
+    }
+
 }
