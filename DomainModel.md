@@ -47,7 +47,7 @@ I'd like to know if I try to remove an item that doesn't exist in my basket.
 | `ArrayList<String> bagelsInStore`  |                                                      |                                |                                                             |
 | `ArrayList<String> bagelsInBasket` | `boolean removeBagel(String bagel)`                  | Removing a specific bagel      | Sysout bagel removed from basket or bagel doesnt exist      |
 |                                    | `boolean addBagel(String bagel)`                     | user adds bagels to basket     | Sysout if reched max capacity or if not output baggel added | //Notes Check by array length if the length becomes longer then max capacity
-| `int maxCapacity`                  | `boolean incrementCapacity(int amount, String name)` | Bob wants to grow his capacity | return capacity incremented and sysout that it got higher   |
+| `int maxCapacity`                  | `boolean incrementCapacity(int amount, String name)` | Bob wants to grow his capacity | return true if incremented and sysout that it got higher    |
 
 
 ## Domain model 

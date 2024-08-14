@@ -25,6 +25,7 @@ Basket basket;
     }
     @Test
     public void testRemoveBagel() {
+        Assertions.assertFalse(basket.addBagel(""));
         Assertions.assertFalse(basket.removeBagel("Double Cheese Bagel"));
         Assertions.assertTrue(basket.removeBagel("Pepperoni Bagel"));
     }
