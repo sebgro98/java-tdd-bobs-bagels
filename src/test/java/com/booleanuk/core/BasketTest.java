@@ -20,14 +20,19 @@ Basket basket;
     public void testAddBagel() {
         Assertions.assertTrue(basket.addBagel("Cheese Bagel"));
         Assertions.assertFalse(basket.addBagel("Ham Bagel"));
+        Assertions.assertTrue(basket.bagelsInBasket.contains("Cheese Bagel"));
+        Assertions.assertFalse(basket.bagelsInBasket.contains("Ham Bagel"));
 
 
     }
     @Test
     public void testRemoveBagel() {
         Assertions.assertFalse(basket.addBagel(""));
-        Assertions.assertFalse(basket.removeBagel("Double Cheese Bagel"));
+        Assertions.assertFalse(basket.removeBagel("Double Cheese Bagel")); // doesn't exist
         Assertions.assertTrue(basket.removeBagel("Pepperoni Bagel"));
+        Assertions.assertFalse(basket.removeBagel("Pepperoni Bagel"));// exist
+        Assertions.assertFalse(basket.bagelsInBasket.contains("Pepperoni Bagel"));
+        Assertions.assertFalse(basket.bagelsInBasket.contains("Double Cheese Bagel"));
     }
 
     @Test

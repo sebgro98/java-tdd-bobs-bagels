@@ -11,7 +11,7 @@ public class Basket {
         bagelsInStore.add("Cheese Bagel");
         bagelsInBasket.add("Pepperoni Bagel");
         bagelsInBasket.add("Cheese Bagel");
-        bagelsInBasket.add("Ham Bagel");
+        bagelsInBasket.add("bagel1");
 
     }
 
@@ -29,6 +29,7 @@ public class Basket {
             System.out.println("The item you're trying to remove doesn't exist.");
             return false;
         }
+        bagelsInBasket.remove(bagel);
         System.out.println("The item " + bagel + " Got removed from your basket");
         return true;
     }
